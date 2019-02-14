@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ParallaxBackgroundBuddy.SharedProject", "ParallaxBackgroundBuddy.SharedProject\ParallaxBackgroundBuddy.SharedProject.shproj", "{93DB6D6D-E160-4274-99C7-4931060F10A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallaxBackgroundBuddy.WindowsDX", "ParallaxBackgroundBuddy.WindowsDX\ParallaxBackgroundBuddy.WindowsDX.csproj", "{1280417A-5A62-441F-AE89-45A34344F9FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallaxBackgroundBuddy.iOS", "ParallaxBackgroundBuddy.iOS\ParallaxBackgroundBuddy.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallaxBackgroundBuddy.Android", "ParallaxBackgroundBuddy.Android\ParallaxBackgroundBuddy.Android.csproj", "{4FBB68C9-DAC1-4828-8C30-DE24C980AF8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{350AD0ED-8C10-40C6-A1A3-99536CF2898B}"
+	ProjectSection(SolutionItems) = preProject
+		buildNugetPackages.ps1 = buildNugetPackages.ps1
+		ParallaxBackgroundBuddy.nuspec = ParallaxBackgroundBuddy.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ParallaxBackgroundBuddy.SharedProject\ParallaxBackgroundBuddy.SharedProject.projitems*{1280417a-5a62-441f-ae89-45a34344f9fa}*SharedItemsImports = 4
+		ParallaxBackgroundBuddy.SharedProject\ParallaxBackgroundBuddy.SharedProject.projitems*{4fbb68c9-dac1-4828-8c30-de24c980af8b}*SharedItemsImports = 4
+		ParallaxBackgroundBuddy.SharedProject\ParallaxBackgroundBuddy.SharedProject.projitems*{93db6d6d-e160-4274-99c7-4931060f10a8}*SharedItemsImports = 13
+		ParallaxBackgroundBuddy.SharedProject\ParallaxBackgroundBuddy.SharedProject.projitems*{e71f3053-056c-4381-9638-048ed73bdff6}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1280417A-5A62-441F-AE89-45A34344F9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1280417A-5A62-441F-AE89-45A34344F9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1280417A-5A62-441F-AE89-45A34344F9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1280417A-5A62-441F-AE89-45A34344F9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBB68C9-DAC1-4828-8C30-DE24C980AF8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBB68C9-DAC1-4828-8C30-DE24C980AF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBB68C9-DAC1-4828-8C30-DE24C980AF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBB68C9-DAC1-4828-8C30-DE24C980AF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F64D349-3C31-444A-9640-29F99EC54D16}
+	EndGlobalSection
+EndGlobal

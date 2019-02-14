@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>ParallaxBackgroundBuddy</id>
+		<version>2.0.0</version>
+		<title>ParallaxBackgroundBuddy</title>
+		<authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/ParallaxBackgroundBuddy</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/ParallaxBackgroundBuddy/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>MonoGame library for drawing background images at different scrolling layers</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>android, ios, windows universal, monogame, xamarin</tags>
+		<dependencies>
+
+			<!--Xamarin.Android-->
+			<group targetFramework="MonoAndroid10">
+				<dependency id="MonoGame.Framework.Android" version="3.7"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+			</group>
+
+			<!--Xamarin.iOS Unified-->
+			<group targetFramework="Xamarin.iOS10">
+				<dependency id="MonoGame.Framework.iOS" version="3.7"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+			</group>
+
+			<group targetFramework="net451">
+				<dependency id="MonoGame.Framework.WindowsDX" version="3.7"/>
+				<dependency id="FilenameBuddy" version="2.0"/>
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+
+		<!--Xamarin.Android-->
+		<file src="ParallaxBackgroundBuddy.Android\bin\Release\ParallaxBackgroundBuddy.Android.pdb" target="lib\MonoAndroid10\ParallaxBackgroundBuddy.Android.pdb" />
+		<file src="ParallaxBackgroundBuddy.Android\bin\Release\ParallaxBackgroundBuddy.Android.dll" target="lib\MonoAndroid10\ParallaxBackgroundBuddy.Android.dll" />
+
+		<!--Xamarin.iOS Unified-->
+		<file src="ParallaxBackgroundBuddy.iOS\bin\Release\ParallaxBackgroundBuddy.iOS.pdb" target="lib\Xamarin.iOS10\ParallaxBackgroundBuddy.iOS.pdb" />
+		<file src="ParallaxBackgroundBuddy.iOS\bin\Release\ParallaxBackgroundBuddy.iOS.dll" target="lib\Xamarin.iOS10\ParallaxBackgroundBuddy.iOS.dll" />
+		<!--WindowsDX-->
+		<file src="ParallaxBackgroundBuddy.WindowsDX\bin\Release\ParallaxBackgroundBuddy.WindowsDX.pdb" target="lib\net451\ParallaxBackgroundBuddy.WindowsDX.pdb" />
+		<file src="ParallaxBackgroundBuddy.WindowsDX\bin\Release\ParallaxBackgroundBuddy.WindowsDX.dll" target="lib\net451\ParallaxBackgroundBuddy.WindowsDX.dll" />
+
+	</files>
+</package>
