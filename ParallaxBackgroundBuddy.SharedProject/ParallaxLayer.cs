@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using RenderBuddy;
 using System;
 
 namespace ParallaxBackgroundBuddy
@@ -27,9 +28,11 @@ namespace ParallaxBackgroundBuddy
 
 		#region Methods
 
-		public ParallaxLayer(Filename textureFilename, float movementDelta, ContentManager content)
+		public ParallaxLayer(Filename textureFilename, float movementDelta, IRenderer renderer)
 		{
-			LayerTexture = content.Load<Texture2D>(textureFilename.GetRelPathFileNoExt());
+			var textureInfo = renderer.LoadImage(textureFilename, null, null);
+			LayerTexture = textureInfo.Texture;
+			//LayerTexture = content.Load<Texture2D>(textureFilename.GetRelPathFileNoExt());
 			MovementDelta = movementDelta;
 		}
 

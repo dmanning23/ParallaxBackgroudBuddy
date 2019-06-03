@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using RenderBuddy;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -30,9 +31,9 @@ namespace ParallaxBackgroundBuddy
 			Layers.OrderByDescending(x => x.MovementDelta);
 		}
 
-		public void AddLayer(Filename textureFilename, float movementDelta, ContentManager content)
+		public void AddLayer(Filename textureFilename, float movementDelta, IRenderer renderer)
 		{
-			Layers.Add(new ParallaxLayer(textureFilename, movementDelta, content));
+			Layers.Add(new ParallaxLayer(textureFilename, movementDelta, renderer));
 		}
 
 		public void Draw(SpriteBatch spriteBatch, Rectangle destinationRect, Vector2 movementOffset)
